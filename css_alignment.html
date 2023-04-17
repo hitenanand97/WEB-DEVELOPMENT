@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <style>
+        *{
+            font-family: "Pacifico";
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            margin: auto;
+            margin-top: 33px;
+            border: 2px solid red;
+            background-color: rgb(249, 153, 27);
+        }
+        .items{
+            background-color: rgb(252, 208, 154);
+            border: 2px solid red;
+            
+            padding: 20px;
+            margin: 5px;
+            box-sizing: border-box;
+            border-radius: 23px;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #electronics{
+            margin: 0.5px !important;
+            margin-right: 5px !important;
+            float: right;
+            width: 48%;
+        }
+        #clothing{
+            /* float: right; */
+            clear: left;
+            width: 48%;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="items">
+            <p id="fruitpara">
+                <h3>Fruits</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quaerat, tempora culpa temporibus optio id voluptas exercitationem velit, facere, fugiat eaque porro molestias dolores quos laboriosam rerum quam molestiae a saepe voluptates iusto provident. Suscipit, voluptatem fugit non quisquam praesentium eum pariatur aliquid voluptate eius, doloribus corporis vel.
+            </p>
+        </div>
+        <div id="computer" class="items">
+            <p id="computerpara">
+                <h3>Computers</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quaerat, tempora culpa temporibus optio id voluptas exercitationem velit, facere, fugiat eaque porro molestias dolores quos laboriosam rerum quam molestiae a saepe voluptates iusto provident. Suscipit, voluptatem fugit non quisquam praesentium eum pariatur aliquid voluptate eius, doloribus corporis vel.
+            </p>
+        </div>
+        <div id="electronics" class="items">
+            <p id="electronicspara">
+                <h3>Electronics</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quaerat, tempora culpa temporibus optio id voluptas exercitationem velit, facere, fugiat eaque porro molestias dolores quos laboriosam rerum quam molestiae a saepe voluptates iusto provident. Suscipit, voluptatem fugit non quisquam praesentium eum pariatur aliquid voluptate eius, doloribus corporis vel.
+            </p>
+        </div>
+        <div id="clothing" class="items">
+            <p id="clothingpara">
+                <h3>clothing</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quaerat, tempora culpa temporibus optio id voluptas exercitationem velit, facere, fugiat eaque porro molestias dolores quos laboriosam rerum quam molestiae a saepe voluptates iusto provident. Suscipit, voluptatem fugit non quisquam praesentium eum pariatur aliquid voluptate eius, doloribus corporis vel.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
