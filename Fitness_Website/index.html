@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bruno Ace">
+    <style>
+        body {
+            background: url('image/man-g7ed08d68c_1920.jpg');
+            /* background-image:url('image/man-g7ed08d68c_1920.jpg'); */
+            height:fit-content;
+            background-repeat: no-repeat;
+            margin: 0px;
+            color: aliceblue;
+            padding: 0px;
+            font-family: "Bruno Ace", sans-serif;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .left img {
+            padding-left: 13px;
+            width: 89px;
+            padding-bottom: 5px;
+        }
+
+        .left div {
+            font-size: 13px;
+            text-align: center;
+            line-height: 5px;
+        }
+
+        .mid {
+            /* border: 2px solid gray; */
+            display: block;
+            width: 620px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 14px;
+            margin: auto;
+        }
+
+        .navbar li a {
+            /* font-size: 20px; */
+            color: aliceblue;
+            text-decoration: none;
+            padding: 15px 22px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.activ {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            border-radius: 58%;
+            width: 45px;
+            height: 45px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            cursor: pointer;
+            padding: 11px 11px;
+            margin: 2px 4px;
+            font-size: 10px;
+            font-family: "Bruno Ace", sans-serif;
+            text-align: center;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        .container {
+            /* border: 2px solid aliceblue; */
+            padding: 43px 4px;
+            margin: 101px 38px;
+            width: 35%;
+            border-radius: 28px;
+        }
+
+        .submit {
+            background-color: rgb(35, 35, 35);
+            color: white;
+            border: 2px solid gray;
+            border-radius: 15px;
+            font-size: 22px;
+            padding: 7px 20px;
+            display: block;
+            margin: 30px auto;
+            font-family: "Bruno Ace", sans-serif;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            background-color: gray;
+        }
+
+        .form input {
+            background-color: transparent;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 3px 2px;
+            width: 350px;
+            border-radius: 15px;
+            margin: 15px auto;
+            display: block;
+            text-align: center;
+            font-family: "Bruno Ace", sans-serif;
+        }
+
+        .form input::placeholder {
+            color: rgba(240, 248, 255, 0.573);
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 45px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head class="header">
+        <div class="left">
+            <img src="image/Picsart_23-04-21_20-58-21-956.png" alt="">
+            <div>Fitness Studio</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="activ">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Mail Us</button>
+        </div>
+    </head>
+    <div class="container">
+        <h2>Join now and get 60% off !!</h2>
+        <form action="backend.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="number" name="" placeholder="Enter your Phone No.">
+            </div>
+            <div class="form">
+                <input type="email" name="" placeholder="Enter your Email">
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
