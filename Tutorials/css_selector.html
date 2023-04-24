@@ -15,18 +15,26 @@
             color: rgb(255, 0, 0);
         }
         /* class selector */
-        .bgBlue{
+        /* .bgBlue{
             background-color: rgb(79, 135, 246);
-        }
+        } */
         /* grouping selector */
         footer, span{
             background-color: pink;
         }    
+        div > p{
+            background-color: yellow;
+            color: red;
+        }
+        div + p{
+            background-color: rgb(29, 29, 4);
+            color: rgb(230, 204, 204);
+        }
     </style>
 </head>
 <body>
     <h3>CSS selectors.</h3>
-    <p id="firstpara">This is a simple paragraph to demonstrate css selectors</p>
+    <div><p id="firstpara">This is a simple paragraph to demonstrate css selectors</p></div>
     <p id="secondpara" class="redElement bgBlue">This is another paragraph.</p>
     <div>
         <p>This is another paragraph inside div.</p>
