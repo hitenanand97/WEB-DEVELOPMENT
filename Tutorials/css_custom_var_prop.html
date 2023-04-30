@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Variables and Properties</title>
+    <style>
+        :root{
+            --primary-color: lime;
+            --maxw : 300px;
+        }
+        .box{
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            margin: 2px 9px;
+            border: 2px solid red;
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            display: flex;
+            margin: auto;
+            max-width: var(--maxw);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+</html>
