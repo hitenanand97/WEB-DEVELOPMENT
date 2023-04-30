@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow & Text-Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            padding: 5px 16px;
+            border: 2px solid red;
+            margin: 4px 14px;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 2px 4px yellow; */
+            box-shadow: inset 2px 4px 6px blue;
+        }
+        #Box-1 h2{
+            text-shadow: 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="Box-1">
+            <h2>Box 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nemo velit vitae aut natus fugiat quam illo esse maiores sit pariatur nisi rem aliquid deleniti et sapiente hic, excepturi iure iste vero deserunt quia quasi autem. Excepturi minima magnam obcaecati?</p>
+        </div>
+        <div class="box" id="Box-2">
+            <h2>Box 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nemo velit vitae aut natus fugiat quam illo esse maiores sit pariatur nisi rem aliquid deleniti et sapiente hic, excepturi iure iste vero deserunt quia quasi autem. Excepturi minima magnam obcaecati?</p>
+        </div>
+        <div class="box" id="Box-3">
+            <h2>Box 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nemo velit vitae aut natus fugiat quam illo esse maiores sit pariatur nisi rem aliquid deleniti et sapiente hic, excepturi iure iste vero deserunt quia quasi autem. Excepturi minima magnam obcaecati?</p>
+        </div>
+        
+    </div>
+</body>
+</html>
