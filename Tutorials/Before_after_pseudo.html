@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Before and After Pseudo Selector
+    </title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/1600x900/?luxurycar') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+            padding-inline-start: 0px;
+
+            margin: auto;
+
+        }
+        li { 
+            list-style: none; 
+            padding: 20px 20px;
+
+        }
+        .navbar{
+            display: flex;
+        }
+        section{
+            /* border: 2px solid blue; */
+            display: flex;
+            margin: 0px;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 50px;
+            height: 300px;
+            justify-content: center;
+            margin: 0px 250px;
+        }
+        
+        p{
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Sample Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima sint iusto odio nam in quo, ipsam exercitationem possimus recusandae labore aperiam molestiae accusantium quam placeat reprehenderit obcaecati nostrum animi, sit sed! Temporibus impedit alias eos, iure, ut ipsa aut id a harum quas distinctio quia illo nulla accusamus sequi!</p>
+    </section>
+    <hr>
+</body>
+</html>
